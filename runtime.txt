@@ -1,0 +1,18 @@
+python-3.8.6
+
+Mahesh has 8 years experience, 
+beginning with Oracle database developer till now he works with Big Data ecosystem. 
+Currently works as a Data engineer. 
+Familiar with big data, spark framework and cloud. 
+Worked as Data Architect for designing data analytics solutions by leveraging AWS Redshift, 
+snowflake. He has hands-on with writing ETL workflows using apache spark and airflow. Also worked 
+on Real time data processing using Kafka and spark streaming.
+
+
+Idam is a fullstack developer with 5 years experience in building mobile, web applications, using python(Django and Flask) and Javascript(ReactJs and ReactNative). 
+Familiar with microservices and event driving software architecture, agile workflow and cloud infrastructure. 
+Skilled in Python, Javascript, PHP, Java programming language and their respective framework Reactjs/ReactNative, Laravel, Flask, Django
+
+
+Idam is a motivated Software Developer adept at working with clients, team members, and project leaders to accomplish software engineering and update tasks according to timelines. 
+He has a solid understanding of the full development life cycle and is able to work with a wide range of frontend and backend technologies including Reactjs, React Native, and Python (Django/Flask) to produce and evaluate working software.

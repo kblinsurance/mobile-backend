@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta
+		name="descripxion"
+		content="Certificate"
+		/>
+		
+		<!--
+		manifest.json provides metadata used when your web app is installed on a
+		user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+		-->
+		
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<!--
+		Notice the use of %PUBLIC_URL% in the tags above.
+		It will be replaced with the URL of the `public` folder during the build.
+		Only files inside the `public` folder can be referenced from the HTML.
+
+		Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+		work correctly both with client-side routing and a non-root public URL.
+		Learn how to configure a non-root public URL by running `npm run build`.
+		-->
+		
+		{% load static %}
+		<!--link rel="stylesheet" type="text/css" href="{% static 'css/cert_style.css' %}" -->
+		<style>
+
+			body{
+				margin: 50px;
+			}
+			#header{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 10px;
+				border-bottom: 1px solid #c6c6c6;
+				padding: 20px;
+			}
+				
+
+			#right, #left{
+				margin: 10px;
+			}
+
+			#header img{
+				width: 150px;
+				height: 80px;
+			}
+
+			#right h3{
+				font-size: 14px;
+			}
+			#right p{
+				font-size: 11.5px;
+				margin: 0 !important;
+			}
+
+			#title{
+				color: #00AFED;
+				font-size: 22px;
+				text-align: center;
+				margin: 50px
+			}
+			#basic{
+				display: block;
+				margin-left: 60px;
+				margin-top: 20px;
+				margin-bottom: 30px;
+			}
+			.basic{
+				display: flex;
+				flex-direction: row;
+				margin: 0px;
+				font-size: 16px !important;
+			}
+
+			.bas_val, .value{
+				font-weight: 700;
+				margin-left: 50px;
+			}
+
+			li{
+				font-size: 16px !important;
+				margin: 10px 0
+			}
+
+			.pp{
+				font-size: 16px !important;
+			}
+			
+		</style>
+		<title>Certificate</title>
+	</head>
+	<body>
+		<div class="container" id="topMain">
+			<header id="header">
+				<div id="left">
+					<img src="https://kblinsurance.com/wp-content/uploads/2017/02/tosin.png" />
+				</div>
+				<div id="right">
+					<h3>KBL INSURANCE LIMITED</h3>
+					<p>BLOCK 138 PLOT 5 GABRIEL OLUSANYA STR.BY ELF BUS-STOPLEKKI, LAGOS</p>
+					<p>Tel: +234 -7032358685, 08090512127</p>
+					<p>E-mail: info@kblinsurance.com, Website: <a href="www.kblinsurance.com">www.kblinsurance.com</a></p>
+				</div>
+			</header>
+			<div id="content">
+				<h2 id="title">Certificate of Insurance</h2>
+				<div id="basic">
+					<div class="basic">
+						<p>Product</p>
+						<p class="bas_val">{{product}}</p>
+					</div>
+					<div class="basic">
+						<p>Policy Number</p>
+						<p class="bas_val">{{policy.policy_number}}</p>
+					</div>
+					<div class="basic">
+						<p>Registration No.</p>
+						<p class="bas_val">{{policy.address}}</p>
+					</div>
+				</div>
+
+				<div class="vehicle_info">
+					<h4 id="title_pol">Policy Information</h4>
+					<ol>
+						<li>House Address <span class="value">{{policy.address}}</span></li>
+						<li>Name of Policy Holder <span class="value">{{user}}</span></li>
+						<li>Commencement Date <span class="value">{{policy.created_at}}</span></li>
+						<li>Date of Expiry <span class="value">{{policy.valid_till}}</span></li>
+						<li>
+							<p class="pp">Limitations as to use*</p>
+							<p class="pp">
+								Use only for social domestic and pleasure purposes and for the policy holder’s business.The Policy does not cover use for hire or reward racing pace-making reliability trail speed-testing or usefor any purpose in connection with the Motor Trade.
+							</p>
+						</li>
+					</ol>
+					<p class="pp">
+						*Limitations rendered inoperative by the provisions of the Motor Vehicles (Third Party Insurance) Act 1945(Nigeria) are not to be included under this heading.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
